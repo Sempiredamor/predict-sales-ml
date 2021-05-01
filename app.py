@@ -1,7 +1,7 @@
 import sklearn
 import joblib
 import pandas as pd
-import np
+
 from WF_AUTOML_FonctionsMetier import extraire_la_premiere_lettre
 
 from flask import Flask, request
@@ -9,7 +9,6 @@ from flask import Flask, request
 print ("scikit-learn=="+sklearn.__version__)
 print ("joblib=="+joblib.__version__)
 print ("pandas=="+pd.__version__)
-print ("numpy=="+np.__version__)
 
 # Load model
 pipeline = joblib.load('final.model')
